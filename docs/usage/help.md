@@ -19,4 +19,4 @@ For more information on Broken Paths, read the [Broken Paths section in the conf
 Check if the mod is in the incompatible section of [Supported Mods](/mods/supported/#incompatible).
 
 ### Anything else:
-Feel free to open an [Issue](https://github.com/SHsuperCM/CITResewn/issues) or DM @SHsuperCM on the Fabric discord server for anything CIT Resewn!
+Feel free to open an [Issue](https://github.com/SHsuperCM/CITResewn/issues)!
