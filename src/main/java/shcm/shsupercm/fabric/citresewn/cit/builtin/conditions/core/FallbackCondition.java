@@ -1,6 +1,5 @@
 package shcm.shsupercm.fabric.citresewn.cit.builtin.conditions.core;
 
-import io.shcm.shsupercm.fabric.fletchingtable.api.Entrypoint;
 import net.minecraft.util.Identifier;
 import shcm.shsupercm.fabric.citresewn.api.CITConditionContainer;
 import shcm.shsupercm.fabric.citresewn.api.CITGlobalProperties;

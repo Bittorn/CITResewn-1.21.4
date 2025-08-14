@@ -5,17 +5,23 @@
   "name": "CIT Resewn",
   "description": "Re-implements MCPatcher's CIT",
   "authors": [
-    "SHsuperCM"
+    "SHsuperCM",
+    "Bittorn"
   ],
   "license": "MIT",
   "icon": "assets/citresewn/logo.png",
   "contact": {
     "homepage": "https://citresewn.shcm.io/",
-    "sources": "https://github.com/SHsuperCM/CITResewn",
-    "issues": "https://github.com/SHsuperCM/CITResewn/issues"
+    "sources": "https://github.com/Bittorn/CITResewn-1.21.4",
+    "issues": "https://github.com/Bittorn/CITResewn-1.21.4/issues"
   },
 
   "environment": "client",
+  "entrypoints": {
+		"client": [
+			"shcm.shsupercm.citresewn.CITResewn"
+		]
+	},
   "accessWidener" : "citresewn.accesswidener",
   "mixins": [
     "citresewn.mixins.json"
