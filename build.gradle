@@ -26,6 +26,10 @@ repositories {
     maven { url 'https://maven.shedaniel.me/' }
 }
 
+fletchingTable {
+    defaultMixinEnvironment = "auto"
+}
+
 loom {
     accessWidenerPath = file("src/main/resources/citresewn.accesswidener")
 
