@@ -21,6 +21,14 @@
 		"client": [
 			"shcm.shsupercm.fabric.citresewn.CITResewn"
 		],
+    
+    "citresewn:condition": [
+      "shcm.shsupercm.fabric.citresewn.cit.builtin.conditions.core.FallbackCondition::CONTAINER",
+      "shcm.shsupercm.fabric.citresewn.cit.builtin.conditions.core.WeightCondition::CONTAINER"
+    ],
+    "citresewn:global_property": [
+      "shcm.shsupercm.fabric.citresewn.cit.builtin.conditions.core.FallbackCondition::globalProperty"
+    ],
 
     "modmenu": [
       "shcm.shsupercm.fabric.citresewn.config.CITResewnModMenu"
