@@ -14,7 +14,6 @@ import java.util.List;
  * resourcepack and the pack's name are used as a tie breaker.
  */
 public class WeightCondition extends IntegerCondition {
-    @Entrypoint(CITConditionContainer.ENTRYPOINT)
     public static final CITConditionContainer<WeightCondition> CONTAINER = new CITConditionContainer<>(WeightCondition.class, WeightCondition::new,
             "weight", "cit_weight", "citWeight");
 

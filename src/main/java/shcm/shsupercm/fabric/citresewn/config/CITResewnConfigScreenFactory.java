@@ -98,13 +98,6 @@ public class CITResewnConfigScreenFactory {
                 })
                 .build());
 
-        category.addEntry(entryBuilder.startBooleanToggle(Text.translatable("config.citresewn.broken_paths.title"), currentConfig.broken_paths)
-                .setTooltip(Text.translatable("config.citresewn.broken_paths.tooltip"))
-                .setSaveConsumer(newConfig -> currentConfig.broken_paths = newConfig)
-                .setDefaultValue(defaultConfig.broken_paths)
-                .requireRestart()
-                .build());
-
         return builder.build();
     }
 }

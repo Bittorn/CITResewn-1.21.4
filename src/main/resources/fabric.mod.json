@@ -11,7 +11,7 @@
   "license": "MIT",
   "icon": "assets/citresewn/logo.png",
   "contact": {
-    "homepage": "https://citresewn.shcm.io/",
+    "original": "https://citresewn.shcm.io/",
     "sources": "https://github.com/Bittorn/CITResewn-1.21.4",
     "issues": "https://github.com/Bittorn/CITResewn-1.21.4/issues"
   },
@@ -19,8 +19,20 @@
   "environment": "client",
   "entrypoints": {
 		"client": [
-			"shcm.shsupercm.citresewn.CITResewn"
-		]
+			"shcm.shsupercm.fabric.citresewn.CITResewn"
+		],
+    
+    "citresewn:condition": [
+      "shcm.shsupercm.fabric.citresewn.cit.builtin.conditions.core.FallbackCondition",
+      "shcm.shsupercm.fabric.citresewn.cit.builtin.conditions.core.WeightCondition"
+    ],
+    "citresewn:global_property": [
+      "shcm.shsupercm.fabric.citresewn.cit.builtin.conditions.core.FallbackCondition"
+    ],
+
+    "modmenu": [
+      "shcm.shsupercm.fabric.citresewn.config.CITResewnModMenu"
+    ]
 	},
   "accessWidener" : "citresewn.accesswidener",
   "mixins": [

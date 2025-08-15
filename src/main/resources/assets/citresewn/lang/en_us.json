@@ -22,5 +22,5 @@
 
 
   "pack.incompatible.broken_paths": "(Contains broken paths)",
-  "pack.incompatible.confirm.broken_paths": "This pack contains broken paths and support for it may be dropped in the future. Contact pack author to remove this warning. (~ CIT Resewn)"
+  "pack.incompatible.confirm.broken_paths": "This pack contains broken paths and will not load. Contact pack author to remove this warning. (~ CIT Resewn)"
 }

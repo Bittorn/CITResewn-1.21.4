@@ -2,7 +2,6 @@ package shcm.shsupercm.fabric.citresewn.cit.builtin.conditions.core;
 
 import net.minecraft.util.Identifier;
 import shcm.shsupercm.fabric.citresewn.api.CITConditionContainer;
-import shcm.shsupercm.fabric.citresewn.api.CITGlobalProperties;
 import shcm.shsupercm.fabric.citresewn.cit.CIT;
 import shcm.shsupercm.fabric.citresewn.cit.builtin.conditions.IdentifierCondition;
 import shcm.shsupercm.fabric.citresewn.pack.format.PropertyValue;
@@ -17,7 +16,6 @@ import java.util.*;
  * @see #globalProperty(String, PropertyValue)
  */
 public class FallbackCondition extends IdentifierCondition {
-    @Entrypoint(CITConditionContainer.ENTRYPOINT)
     public static final CITConditionContainer<FallbackCondition> CONTAINER = new CITConditionContainer<>(FallbackCondition.class, FallbackCondition::new,
             "cit_fallback", "citFallback");
 
@@ -44,7 +42,6 @@ public class FallbackCondition extends IdentifierCondition {
      * This behavior is overridden if the CIT specifies a {@link FallbackCondition fallback} manually.
      * @see #apply(List)
      */
-    @Entrypoint(CITGlobalProperties.ENTRYPOINT)
     public static void globalProperty(String key, PropertyValue value) throws Exception {
         if (key.equals("root_fallback"))
             fallbackCITResewnRoot = value != null && Boolean.parseBoolean(value.value());
